@@ -1,52 +1,51 @@
-<html>
-  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
-  <link rel="stylesheet" href="index.css">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Index</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body style="background-color:#e60000;font-family:'Luckiest Guy', cursive;">
-<h1 style="text-align:center;color:Black;">Isaac Sanchez Gutierrez IDGS 7-3</h1>
- <center>
-<img src="https://c.tenor.com/qFaVryk8_64AAAAC/morgana-dance-morgana.gif" alt="Computer Man" style="width:400px;height:300px;">
-</center>
-<h1 style="text-align:center;color:Black;">Persona 5 characters</h1>
-  <div class="wrapper">
-  <div class="slider" id="slider">
-    <ul class="slides">
-      <li class="slide" id="slide1">
-        <a href="#">
-          <img src="https://wallpaperaccess.com/full/2082950.jpg" alt="photo 1">
-        </a>
-      </li>
-      <li class="slide" id="slide3">
-        <a href="#">
-          <img src="https://cache.desktopnexus.com/thumbseg/2592/2592365-bigthumbnail.jpg" alt="photo 3">
-        </a>
-      </li>
-      <li class="slide" id="slide4">
-        <a href="#">
-          <img src="https://static.zerochan.net/Fox.%28Persona.5%29.full.2090574.jpg" alt="photo 4">
-        </a>
-      </li>
-      <li class="slide" id="slide5">
-        <a href="#">
-           <img src="https://i.pinimg.com/originals/06/e6/0c/06e60c81bd7413f6b495b5cd8a4874c0.jpg" alt="photo 5">
-        </a>
-      </li>
-      <li class="slide">
-        <a href="#">
-          <img src="https://wallpaperaccess.com/full/2082950.jpg" alt="photo 1">
-        </a>
-      </li>
-    </ul>
-    <ul class="slider-controler">
-      <li><a href="#slide1">&bullet;</a></li>
-      <li><a href="#slide2">&bullet;</a></li>
-      <li><a href="#slide3">&bullet;</a></li>
-      <li><a href="#slide4">&bullet;</a></li>
-      <li><a href="#slide5">&bullet;</a></li>
-    </ul>
+<body>
+
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="la.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="ny.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
 </div>
+
 </body>
 </html>
